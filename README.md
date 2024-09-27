@@ -12,4 +12,4 @@
 - Dichotomic search
 - Linear search
 
-*Measurements made on a Macbook Air M2 ARM 16gb RAM*
+*Measurements made on a Macbook Air M2 ARM 16gb RAM.*
