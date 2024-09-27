@@ -1,5 +1,7 @@
 # This repository was created to demonstrate the running times of different sorting and searching algorithms in Python for arrays of different sizes: 10, 100, 1000 and 10000 elements.
 
+I did that with another student during my 3rd year in IT studies, at ESGI.
+
 ### Sorting algorithms used:
 - Bubble sort
 - Selection sort
