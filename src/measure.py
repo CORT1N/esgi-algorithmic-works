@@ -9,7 +9,6 @@ def measure(types, iterations, arr_length, min_value, max_value, value=None):
         average = 0
         for _ in range(iterations):
             arr = [random.randint(min_value, max_value) for _ in range(arr_length)]
-            # execution_time = measure_execution_time(sort if value is None else search, arr, type, None if value is None else value)
             if value is None:
                 execution_time = measure_execution_time(sort, arr, type)
             else:
