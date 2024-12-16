@@ -11,13 +11,13 @@ def right(i):
 
 def heapify(arr, n, i):
     largest = i
-    left = left(i)
-    right = right(i)
+    left_child = left(i)
+    right_child = right(i)
 
-    if left < n and arr[left] > arr[largest]:
-        largest = left
-    if right < n and arr[right] > arr[largest]:
-        largest = right
+    if left_child < n and arr[left_child] > arr[largest]:
+        largest = left_child
+    if right_child < n and arr[right_child] > arr[largest]:
+        largest = right_child
 
     if largest != i:
         arr[i], arr[largest] = arr[largest], arr[i]
