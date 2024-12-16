@@ -1,4 +1,6 @@
-# This repository was created to demonstrate the running times of different algorithms and data structures in Python. I did that with another student during my 3rd year in IT studies, at ESGI.
+# This repository was created to demonstrate the running times of different algorithms and data structures in Python. 
+
+*I did that with another student during my 3rd year in IT studies, at ESGI.*
 
 ### Sorting algorithms used:
 - Bubble sort
