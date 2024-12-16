@@ -1,6 +1,4 @@
-# This repository was created to demonstrate the running times of different sorting and searching algorithms in Python for arrays of different sizes: 10, 100, 1000 and 10000 elements.
-
-I did that with another student during my 3rd year in IT studies, at ESGI.
+# This repository was created to demonstrate the running times of different algorithms and data structures in Python. I did that with another student during my 3rd year in IT studies, at ESGI.
 
 ### Sorting algorithms used:
 - Bubble sort
@@ -14,4 +12,11 @@ I did that with another student during my 3rd year in IT studies, at ESGI.
 - Dichotomic search
 - Linear search
 
-*Measurements made on a Macbook Air M2 ARM 16gb RAM.*
+### Data structures used:
+- Heap
+- Priority queue
+- Stack
+- Queue
+- Linked list
+
+*Measurements made on a Macbook Pro M4 Pro ARM 24gb RAM.*

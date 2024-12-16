@@ -1,5 +1,6 @@
+from src.sort import sort
 from src.search import search
-from src.measure import measure
+from src.measure import measure_alg
 
 all_sort_types = ['bubble', 'selection', 'insertion', 'quick', 'dutch', 'merge']
 # Created this because dutch sort can't play with more than 3 different values
@@ -14,43 +15,43 @@ max_values = [2, 9, 99, 999]
 for max_value in max_values:
     for arr_length in arr_lengths:
         if max_value == 2:
-            measure(all_sort_types, iterations, arr_length, min_value, max_value)
+            measure_alg(all_sort_types, iterations, arr_length, min_value, max_value)
         else:
-            measure(sort_types, iterations, arr_length, min_value, max_value)
+            measure_alg(sort_types, iterations, arr_length, min_value, max_value)
             
-searched_value = 1
+searched_value = 59
 
 for max_value in max_values:
     for arr_length in arr_lengths:
-        measure(search_types, iterations, arr_length, min_value, max_value, searched_value)
+        measure_alg(search_types, iterations, arr_length, min_value, max_value, searched_value)
 
 # # On 10 different values, with an array of 10
-# measure(all_sort_types, iterations, 10, 0, 9)
+# measure_alg(all_sort_types, iterations, 10, 0, 9)
 # # On 10 different values, with an array of 100
-# measure(all_sort_types, iterations, 100, 0, 9)
+# measure_alg(all_sort_types, iterations, 100, 0, 9)
 # # On 10 different values, with an array of 1000
-# measure(all_sort_types, iterations, 1000, 0, 9)
+# measure_alg(all_sort_types, iterations, 1000, 0, 9)
 
 # # On 10 different values, with an array of 10
-# measure(sort_types, iterations, 10, 0, 9)
+# measure_alg(sort_types, iterations, 10, 0, 9)
 # # On 10 different values, with an array of 100
-# measure(sort_types, iterations, 100, 0, 9)
+# measure_alg(sort_types, iterations, 100, 0, 9)
 # # On 10 different values, with an array of 1000
-# measure(sort_types, iterations, 1000, 0, 9)
+# measure_alg(sort_types, iterations, 1000, 0, 9)
 
 # # On 100 different values, with an array of 10
-# measure(sort_types, iterations, 10, 0, 99)
+# measure_alg(sort_types, iterations, 10, 0, 99)
 # # On 100 different values, with an array of 100
-# measure(sort_types, iterations, 100, 0, 99)
+# measure_alg(sort_types, iterations, 100, 0, 99)
 # # On 100 different values, with an array of 1000
-# measure(sort_types, iterations, 1000, 0, 99)
+# measure_alg(sort_types, iterations, 1000, 0, 99)
 
 # # On 1000 different values, with an array of 10
-# measure(sort_types, iterations, 10, 0, 999)
+# measure_alg(sort_types, iterations, 10, 0, 999)
 # # On 1000 different values, with an array of 100
-# measure(sort_types, iterations, 100, 0, 999)
+# measure_alg(sort_types, iterations, 100, 0, 999)
 # # On 1000 different values, with an array of 1000
-# measure(sort_types, iterations, 1000, 0, 999)
+# measure_alg(sort_types, iterations, 1000, 0, 999)
 
 # sort(arr, 'bubble')
 # sort(arr, 'selection')

@@ -3,8 +3,14 @@ import time, random
 from src.sort import sort
 from src.search import search
 
-def measure(types, iterations, arr_length, min_value, max_value, value=None):
-    print(f'\nMeasuring on { arr_length } values between { min_value } and { max_value } for { iterations } iterations :\n')
+def measure_execution_time(function, *args):
+    start = time.time()
+    function(*args)
+    end = time.time()
+    return round((end - start) * 1000, 8)
+
+def measure_alg(types, iterations, arr_length, min_value, max_value, value=None):
+    print(f'\nMeasuring on { arr_length } values between { min_value } and { max_value } for { iterations } iterations:\n')
     for type in types:
         average = 0
         for _ in range(iterations):
@@ -16,9 +22,3 @@ def measure(types, iterations, arr_length, min_value, max_value, value=None):
             average += execution_time
         average = average / iterations
         print(f'The { type } { 'sort' if value == None else 'search' } function took on average { average } ms')
-
-def measure_execution_time(function, *args):
-    start = time.time()
-    function(*args)
-    end = time.time()
-    return round((end - start) * 1000, 8)
